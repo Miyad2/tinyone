@@ -363,3 +363,9 @@ footer .row {
 .media a {
   color: #fff;
 }
+.examples a:hover,
+.footer-link a:hover,
+.download a:hover,
+.media a:hover {
+  color: var(--bannerBg);
+}
