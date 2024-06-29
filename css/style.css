@@ -383,3 +383,6 @@ footer .row {
 .media a:hover {
   color: var(--bannerBg);
 }
+.footer-left-details p{
+  color: #fff;
+}
