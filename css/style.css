@@ -21,6 +21,9 @@
   --white: #fff;
   --btnBg: #fcdb00;
   --icon-color: #010101;
+  --h-paragraph:#555555;
+  --subs-sub-heading-clr:#898989;
+  --paragraph-clr:#898989;
 }
 
 section {
@@ -81,6 +84,7 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 400;
+  color: #313841;
 }
 
 h5 {
@@ -99,6 +103,7 @@ h6 {
 p {
   font-weight: 400;
   font-size: 16px;
+  color: var(--paragraph-clr);
 }
 
 .sub-title {
@@ -234,6 +239,9 @@ nav.navbar.navbar-expand-lg.navbar-expand-lg {
 .carousel-indicators {
   align-items: center;
 }
+.header-para p{
+  color: var(--h-paragraph);
+}
 
 /* ===========  Features  =========== */
 
@@ -285,12 +293,12 @@ section.subscription-section {
 }
 
 .subscription-heading h2 {
-  color: #fff;
+  color: var(--bannerBg);
 }
 
 .subscription-heading h4 {
   padding: 20px 0px;
-  color: #fff;
+  color: var(--subs-sub-heading-clr);
 }
 
 .subscription-heading {
@@ -301,7 +309,7 @@ section.subscription-section {
 
 .subscription-form {
   width: 60%;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .subscription-form form {
@@ -309,7 +317,9 @@ section.subscription-section {
   align-items: center;
   gap: 10px;
 }
-
+.subscription-form form input.form-control::placeholder{
+  color: var(--paragraph-clr);
+}
 .subscription-form form button.btn {
   border-radius: 8px;
 }
@@ -328,6 +338,7 @@ section.subscription-section {
   text-align: center;
   padding-bottom: 40px;
 }
+
 
 /* =============  Footer  ============= */
 
