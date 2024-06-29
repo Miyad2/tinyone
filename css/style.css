@@ -117,13 +117,16 @@ button.btn {
   font-size: 18px;
   line-height: normal;
   background: var(--btnBg);
-  color: #fff;
   transition: 0.3s ease-in-out;
+  color: #000;
+  text-transform: uppercase;
 }
 
 button.btn:hover {
-  background: #fff;
-  color: var(--footer);
+  /* background: #fff; */
+  background: transparent;
+  color: rgb(255, 255, 255);
+  /* color: var(--footer); */
   border: 1px solid var(--btnBg);
   transition: 0.3s ease-in-out;
 }
