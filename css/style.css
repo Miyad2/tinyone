@@ -21,9 +21,9 @@
   --white: #fff;
   --btnBg: #fcdb00;
   --icon-color: #010101;
-  --h-paragraph:#555555;
-  --subs-sub-heading-clr:#898989;
-  --paragraph-clr:#898989;
+  --h-paragraph: #555555;
+  --subs-sub-heading-clr: #898989;
+  --paragraph-clr: #898989;
 }
 
 section {
@@ -51,6 +51,8 @@ a:hover {
 ul,
 li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -125,7 +127,7 @@ button.btn {
 button.btn:hover {
   /* background: #fff; */
   background: transparent;
-  color: rgb(255, 255, 255);
+  color: var(--icon-color);
   /* color: var(--footer); */
   border: 1px solid var(--btnBg);
   transition: 0.3s ease-in-out;
@@ -138,6 +140,40 @@ button.btn:hover {
   color: var(--black);
   margin-bottom: 2.5rem;
   padding: 10px 0px;
+}
+
+/* ================ Off Canvas // Side Menu  ================ */
+
+section.offcan_section.d-lg-none {
+  padding: 0;
+  margin: 0;
+}
+
+ul.off_navbar-nav li.nav-item a.nav-link.after {
+  margin: 0px;
+}
+
+.offcan_section button.btn {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 999;
+}
+
+.offcanvas-header {
+  display: flex;
+  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header.offcanvas-nav {
+  position: absolute;
+  top: 15px;
+}
+
+ul.off_navbar-nav.mb-2.mb-lg-0 {
+  margin-top: 20px;
 }
 
 /* ======================= Nav Bar =========================== */
@@ -249,7 +285,8 @@ nav.navbar.navbar-expand-lg.navbar-expand-lg {
 .carousel-indicators {
   align-items: center;
 }
-.header-para p{
+
+.header-para p {
   color: var(--h-paragraph);
 }
 
@@ -327,9 +364,11 @@ section.subscription-section {
   align-items: center;
   gap: 10px;
 }
-.subscription-form form input.form-control::placeholder{
+
+.subscription-form form input.form-control::placeholder {
   color: var(--paragraph-clr);
 }
+
 .subscription-form form button.btn {
   border-radius: 8px;
 }
@@ -365,6 +404,7 @@ footer {
 .footer-left-details address {
   margin-bottom: 0;
 }
+
 footer .row {
   justify-content: end;
 }
@@ -375,16 +415,14 @@ footer .row {
 .media a {
   color: #fff;
 }
+
 .examples a:hover,
 .footer-link a:hover,
 .download a:hover,
 .media a:hover {
   color: var(--bannerBg);
 }
-.footer-left-details p{
+
+.footer-left-details p {
   color: #fff;
 }
-
-
-
-
